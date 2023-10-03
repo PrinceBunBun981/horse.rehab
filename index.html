@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta class="dynamic" property="og:video" content="https://horse.rehab/assets/horse.mp4">
-    <meta class="dynamic" property="og:video:type" content="video/mp4">
-    <meta class="dynamic" name="twitter:player:stream" content="https://horse.rehab/assets/horse.mp4">
-    <meta class="dynamic" name="twitter:player:stream:content_type" content="video/mp4">
+    <!-- <meta property="og:type" content="video.other"> -->
+    <meta property="og:video:url" content="https://horse.rehab/assets/horse.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta name="twitter:player:stream" content="https://horse.rehab/assets/horse.mp4">
+    <meta name="twitter:player:stream:content_type" content="video/mp4">
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #3a3a3a;
+            background-color: #161616;
         }
 
         #video-container {
@@ -30,7 +31,7 @@
         footer {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
-            background-color: #333;
+            background-color: #111111;
             color: #fff;
             padding: 10px;
         }
@@ -42,9 +43,8 @@
   </head>
   <body>
     <div id="video-container">
-        <video controls>
+        <video controls autoplay>
             <source src="assets/horse.mp4" type="video/mp4">
-            Your browser does not support the video tag.
         </video>
     </div>
     <footer>
