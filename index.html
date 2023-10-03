@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <meta property="og:type" content="video.other">
     <meta property="og:video:url" content="https://horse.rehab/assets/horse.mp4">
     <meta property="og:video:type" content="video/mp4">
@@ -39,11 +40,20 @@
     </style>
   </head>
   <body>
-    <video controls autoplay>
+    <video controls autoplay id="video">
         <source src="assets/horse.mp4" type="video/mp4">
+        Your browser does not support the video tag or the file format of this video.
     </video>
     <footer>
         This domain wasn't cheap, help me buy more stupid ones by <a href="https://buymeacoffee.com/nickalfonso" target="_blank">Buying me a Coffee</a>.
     </footer>
+    <script>
+        const v = document.getElementById('video');
+        const p = v.play() || Promise.reject('');
+        p.then(() => {}).catch(() => {
+            v.muted = true;
+            v.play();
+        });
+    </script>
   </body>
 </html>
