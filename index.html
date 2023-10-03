@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta property="og:type" content="video.other"> -->
+    <meta property="og:type" content="video.other">
     <meta property="og:video:url" content="https://horse.rehab/assets/horse.mp4">
     <meta property="og:video:type" content="video/mp4">
-    <meta name="twitter:player:stream" content="https://horse.rehab/assets/horse.mp4">
-    <meta name="twitter:player:stream:content_type" content="video/mp4">
+    <meta property="og:video:width" content="396">
+    <meta property="og:video:height" content="428">
     <style>
         body {
             margin: 0;
@@ -15,14 +15,11 @@
             background-color: #161616;
         }
 
-        #video-container {
+        video {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-        }
-
-        video {
             display: block;
             max-width: 100%;
             max-height: 100%;
@@ -42,11 +39,9 @@
     </style>
   </head>
   <body>
-    <div id="video-container">
-        <video controls autoplay>
-            <source src="assets/horse.mp4" type="video/mp4">
-        </video>
-    </div>
+    <video controls autoplay>
+        <source src="assets/horse.mp4" type="video/mp4">
+    </video>
     <footer>
         This domain wasn't cheap, help me buy more stupid ones by <a href="https://buymeacoffee.com/nickalfonso" target="_blank">Buying me a Coffee</a>.
     </footer>
