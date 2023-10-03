@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta class="dynamic" property="og:video" content="https://horse.rehab/assets/horse.mp4">
+    <meta class="dynamic" property="og:video:type" content="video/mp4">
+    <meta class="dynamic" name="twitter:player:stream" content="https://horse.rehab/assets/horse.mp4">
+    <meta class="dynamic" name="twitter:player:stream:content_type" content="video/mp4">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #3a3a3a;
+        }
+
+        #video-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        video {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        footer {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        a {
+            color: #7fffd4;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="video-container">
+        <video controls>
+            <source src="assets/horse.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <footer>
+        This domain wasn't cheap, help me buy more stupid ones by <a href="https://buymeacoffee.com/nickalfonso" target="_blank">Buying me a Coffee</a>.
+    </footer>
+  </body>
+</html>
